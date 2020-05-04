@@ -1,0 +1,39 @@
+package com.nelioalves.cursomc.resources.exceptions;
+
+import java.io.Serializable;
+
+public class FieldMessage implements Serializable{
+	private static final long serialVersionUID = 1L;
+	
+	private String fieldName;
+	private String messqge;
+	
+	public FieldMessage() {
+		
+	}
+
+	public FieldMessage(String fieldName, String messqge) {
+		super();
+		this.fieldName = fieldName;
+		this.messqge = messqge;
+	}
+
+	public String getFieldName() {
+		return fieldName;
+	}
+
+	public void setFieldName(String fieldName) {
+		this.fieldName = fieldName;
+	}
+
+	public String getMessqge() {
+		return messqge;
+	}
+
+	public void setMessqge(String messqge) {
+		this.messqge = messqge;
+	}
+	
+	
+
+}
